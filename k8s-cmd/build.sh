@@ -11,7 +11,7 @@ mkdir -p /down && cd /down
 	mv /tmp/rbac-lookup /down/ && rm -rf /tmp/*
 	
 	##kubectl helm stern kustomize
-	KUBE_LATEST_VERSION="v1.14.1"
+	KUBE_LATEST_VERSION="v1.14.6"
 	HELM_VERSION="v2.14.3"
 	#kubectl
 	wget -q https://storage.googleapis.com/kubernetes-release/release/${KUBE_LATEST_VERSION}/bin/linux/amd64/kubectl -O kubectl
