@@ -1,0 +1,9 @@
+FROM golang:1.12.1-alpine3.9 as src
+
+ENV TIMEZONE Asia/Shanghai
+ENV LANG C.UTF-8
+ENV VER=v1
+
+ADD base.sh /
+RUN sh /base.sh
+
