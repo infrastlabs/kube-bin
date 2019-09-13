@@ -9,8 +9,8 @@ FROM infrastlabs/alpine-ext
 MAINTAINER sam <sldevsir@126.com>
 USER root
 ENV DAPPER_SOURCE /go/src/github.com/rancher/k3s/
-COPY --from=src ${DAPPER_SOURCE}/build ${DAPPER_SOURCE}/build
-COPY --from=src ${DAPPER_SOURCE}/dist ${DAPPER_SOURCE}/dist
+COPY --from=src ${DAPPER_SOURCE}/build ${DAPPER_SOURCE}/build 
+#COPY --from=src ${DAPPER_SOURCE}/dist ${DAPPER_SOURCE}/dist
 
 ##run as root
 USER root
